@@ -1,0 +1,74 @@
+#STERN
+
+ship_section_template = { #improved broadside
+    key = "CRUISER_STERN_M1"
+    ship_size = cruiser
+    fits_on_slot = stern
+    entity = "cruiser_stern_M1_entity"
+    icon = "GFX_ship_part_core_stern"
+    prerequisites = {
+        tech_idrinthstellarisbettershiphulls_cruiser_improvements
+    }
+
+    component_slot = {
+        name = "MEDIUM_GUN_01"
+        slot_size = medium
+        slot_type = weapon
+        locatorname = "medium_gun_01"
+    }
+    component_slot = {
+        name = "SMALL_GUN_01"
+        slot_size = small
+        slot_type = weapon
+        locatorname = "small_gun_01"
+    }
+
+    medium_utility_slots = 3
+    aura_slots = 1
+
+    cost = 120
+}
+
+ship_section_template = { #improved gunship
+    key = "CRUISER_STERN_S2"
+    ship_size = cruiser
+    fits_on_slot = stern
+    entity = "cruiser_stern_S2_entity"
+    icon = "GFX_ship_part_core_stern"
+    prerequisites = {
+        tech_idrinthstellarisbettershiphulls_cruiser_improvements
+    }
+
+    component_slot = {
+        name = "SMALL_GUN_01"
+        slot_size = small
+        slot_type = weapon
+        locatorname = "small_gun_01"
+    }
+
+    component_slot = {
+        name = "SMALL_GUN_02"
+        slot_size = small
+        slot_type = weapon
+        locatorname = "small_gun_02"
+    }
+
+    component_slot = {
+        name = "SMALL_GUN_03"
+        slot_size = small
+        slot_type = weapon
+        locatorname = "small_gun_03"
+    }
+
+    component_slot = {
+        name = "SMALL_GUN_03"
+        slot_size = small
+        slot_type = weapon
+        locatorname = "small_gun_03"
+    }
+
+    medium_utility_slots = 3
+    aura_slots = 1
+
+    cost = 120
+}
