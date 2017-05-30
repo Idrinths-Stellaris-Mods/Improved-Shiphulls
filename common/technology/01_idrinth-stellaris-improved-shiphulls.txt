@@ -3,40 +3,47 @@ tech_idrinthstellarisbettershiphulls_battleship_improvements= {
     area = engineering
     category = { voidcraft }
     tier = 0
+    prerequisites = { "tech_spaceport_6" "tech_engineering_lab_1" }
 }
-tech_idrinthstellarisbettershiphulls_corvette_improvements= {
-    cost=1500
-    area = engineering
-    category = { voidcraft }
-    tier = 0
-}
+#tech_idrinthstellarisbettershiphulls_corvette_improvements= {
+#    cost=1500
+#    area = engineering
+#    category = { voidcraft }
+#    tier = 0
+    prerequisites = { "tech_spaceport_2" "tech_engineering_lab_1" }
+#}
 tech_idrinthstellarisbettershiphulls_cruiser_improvements= {
     cost=1500
     area = engineering
     category = { voidcraft }
     tier = 0
+    prerequisites = { "tech_spaceport_5" "tech_engineering_lab_1" }
 }
 tech_idrinthstellarisbettershiphulls_destroyer_improvements= {
     cost=1500
     area = engineering
     category = { voidcraft }
     tier = 0
+    prerequisites = { "tech_spaceport_3" "tech_engineering_lab_1" }
 }
 tech_idrinthstellarisbettershiphulls_military_stations_improvements= {
     cost=1000
     area = engineering
     category = { voidcraft }
     tier = 0
+    prerequisites = { "tech_spaceport_4" "tech_engineering_lab_1" }
 }
 tech_idrinthstellarisbettershiphulls_civilian_ships_improvements= {
     cost=500
     area = engineering
     category = { voidcraft }
     tier = 0
+    prerequisites = { "tech_spaceport_2" "tech_engineering_lab_1" }
 }
 tech_idrinthstellarisbettershiphulls_civilian_stations_improvements= {
     cost=500
     area = engineering
     category = { voidcraft }
     tier = 0
+    prerequisites = { "tech_spaceport_2" "tech_engineering_lab_1" }
 }
