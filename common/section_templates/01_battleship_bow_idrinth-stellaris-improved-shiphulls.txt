@@ -1,6 +1,7 @@
-#BOW
-
-ship_section_template = {#improved broadside
+#
+# TIER 1
+#
+ship_section_template = {
     key = "BATTLESHIP_BOW_L1M1S2"
     ship_size = battleship
     fits_on_slot = bow
@@ -42,10 +43,10 @@ ship_section_template = {#improved broadside
     aux_utility_slots = 2
     medium_utility_slots = 2
 
-    cost = 240
+    cost = 245
 }
 
-ship_section_template = { # improved Artillerie
+ship_section_template = {
     key = "BATTLESHIP_BOW_L2"
     ship_size = battleship
     fits_on_slot = bow
@@ -73,10 +74,10 @@ ship_section_template = { # improved Artillerie
     aux_utility_slots = 2
     medium_utility_slots = 2
 
-    cost = 240
+    cost = 245
 }
 
-ship_section_template = { #improved hangar
+ship_section_template = {
     key = "BATTLESHIP_BOW_M1S2SHB"
     ship_size = battleship
     fits_on_slot = bow
@@ -129,10 +130,10 @@ ship_section_template = { #improved hangar
     aux_utility_slots = 2
     medium_utility_slots = 2
 
-    cost = 240
+    cost = 245
 }
 
-ship_section_template = { #improved spinal mound
+ship_section_template = {
     key = "BATTLESHIP_BOW_M2S4"
     ship_size = battleship
     fits_on_slot = bow
@@ -171,19 +172,65 @@ ship_section_template = { #improved spinal mound
     aux_utility_slots = 2
     medium_utility_slots = 2
 
-    cost = 240
+    cost = 245
+}
+#
+# TIER 2
+#
+ship_section_template = {
+    key = "BATTLESHIP_BOW_L1M1S2"
+    ship_size = battleship
+    fits_on_slot = bow
+    entity = "battleship_bow_L1M1S2_entity"
+    icon = "GFX_ship_part_core_bow"
+    icon_frame = 1
+    prerequisites = {
+        tech_idrinthstellarisbettershiphulls_battleship_improvements_1
+    }
+
+    component_slot = {
+        name = "LARGE_GUN_01"
+        slot_size = large
+        slot_type = weapon
+        locatorname = "large_gun_01"
+    }
+    component_slot = {
+        name = "MEDIUM_GUN_01"
+        slot_size = medium
+        slot_type = weapon
+        locatorname = "medium_gun_01"
+    }
+
+    component_slot = {
+        name = "SMALL_GUN_01"
+        slot_size = small
+        slot_type = weapon
+        locatorname = "small_gun_01"
+    }
+
+    component_slot = {
+        name = "SMALL_GUN_02"
+        slot_size = small
+        slot_type = weapon
+        locatorname = "small_gun_02"
+    }
+
+    large_utility_slots = 2
+    aux_utility_slots = 2
+    medium_utility_slots = 2
+    small_utility_slots = 1
+
+    cost = 250
 }
 
-#STERN
-
-ship_section_template = { #improved artillery
-    key = "BATTLESHIP_STERN_L1"
+ship_section_template = {
+    key = "BATTLESHIP_BOW_L2"
     ship_size = battleship
-    fits_on_slot = stern
-    entity = "battleship_stern_L1_entity"
-    icon = "GFX_ship_part_core_stern"
+    fits_on_slot = bow
+    entity = "battleship_bow_L2_entity"
+    icon = "GFX_ship_part_core_bow"
     prerequisites = {
-        tech_idrinthstellarisbettershiphulls_battleship_improvements
+        tech_idrinthstellarisbettershiphulls_battleship_improvements_1
     }
 
     component_slot = {
@@ -200,29 +247,33 @@ ship_section_template = { #improved artillery
         locatorname = "large_gun_02"
     }
 
-    component_slot = {
-        name = "MEDIUM_GUN_01"
-        slot_size = medium
-        slot_type = weapon
-        locatorname = "medium_gun_01"
-    }
-
     large_utility_slots = 2
-    aura_slots = 2
-    required_component_sets = "cofh_se_ship_small_aura_components"
-    required_component_sets = "cofh_se_ship_small_aura_components"
+    aux_utility_slots = 2
+    medium_utility_slots = 2
+    small_utility_slots = 1
 
-    cost = 240
+    cost = 250
 }
 
-ship_section_template = { #improved broadside
-    key = "BATTLESHIP_STERN_M2"
+ship_section_template = {
+    key = "BATTLESHIP_BOW_M1S2SHB"
     ship_size = battleship
-    fits_on_slot = stern
-    entity = "battleship_stern_M2_entity"
-    icon = "GFX_ship_part_core_stern"
+    fits_on_slot = bow
+    entity = "battleship_bow_M1S2SHB_entity"
+    icon = "GFX_ship_part_core_bow"
     prerequisites = {
-        tech_idrinthstellarisbettershiphulls_battleship_improvements
+        tech_idrinthstellarisbettershiphulls_battleship_improvements_1
+    }
+
+    ai_weight = {
+        modifier = {
+            factor = 10.0
+            is_preferred_weapons = explosive
+        }
+        modifier = {
+            factor = 0.1
+            NOT = { is_preferred_weapons = explosive }
+        }
     }
 
     component_slot = {
@@ -231,33 +282,75 @@ ship_section_template = { #improved broadside
         slot_type = weapon
         locatorname = "medium_gun_01"
     }
+
     component_slot = {
-        name = "MEDIUM_GUN_02"
-        slot_size = medium
+        name = "SMALL_GUN_01"
+        slot_size = point_defence
         slot_type = weapon
-        locatorname = "medium_gun_02"
+        locatorname = "small_gun_01"
+    }
+
+    component_slot = {
+        name = "SMALL_GUN_02"
+        slot_size = point_defence
+        slot_type = weapon
+        locatorname = "small_gun_02"
     }
     component_slot = {
-        name = "MEDIUM_GUN_03"
-        slot_size = medium
-        slot_type = weapon
-        locatorname = "medium_gun_03"
-    }
-    component_slot = {
-        name = "MEDIUM_GUN_04"
-        slot_size = medium
-        slot_type = weapon
-        locatorname = "medium_gun_04"
-    }
-    component_slot = {
-        name = "MEDIUM_GUN_05"
-        slot_size = medium
-        slot_type = weapon
-        locatorname = "medium_gun_05"
+        name = "STRIKE_CRAFT_01"
+        slot_size = large
+        slot_type = strike_craft
+        rotation = 90
+        locatorname = "strike_craft_locator_01"
     }
 
     large_utility_slots = 2
-    aura_slots = 2
+    aux_utility_slots = 2
+    medium_utility_slots = 2
+    small_utility_slots = 1
 
-    cost = 240
+    cost = 250
+}
+
+ship_section_template = {
+    key = "BATTLESHIP_BOW_M2S4"
+    ship_size = battleship
+    fits_on_slot = bow
+    entity = "battleship_bow_XL1_entity"
+    icon = "GFX_ship_part_core_bow"
+
+    prerequisites = {
+        tech_energy_lance_1
+        tech_energy_lance_2
+        tech_arc_emitter_1
+        tech_arc_emitter_2
+        tech_mass_accelerator_1
+        tech_mass_accelerator_2
+        tech_idrinthstellarisbettershiphulls_battleship_improvements_1
+    }
+
+    ai_weight = {
+        modifier = {
+            factor = 10.0
+            NOT = { is_preferred_weapons = explosive }
+        }
+        modifier = {
+            factor = 0.1
+            is_preferred_weapons = explosive
+        }
+    }
+
+    component_slot = {
+        name = "EXTRA_LARGE_01"
+        slot_size = extra_large
+        slot_type = weapon
+        locatorname = "xl_gun_01"
+    }
+
+    large_utility_slots = 2
+    aux_utility_slots = 2
+    medium_utility_slots = 2
+    small_utility_slots = 1
+
+    cost = 250
 }
