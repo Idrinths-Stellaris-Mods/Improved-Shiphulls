@@ -1,0 +1,183 @@
+#
+# TIER 1
+#
+ship_section_template = {
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T1_BATTLESHIP_STERN_L1"
+    ship_size = battleship
+    fits_on_slot = stern
+    entity = "battleship_stern_L1_entity"
+    icon = "GFX_ship_part_core_stern"
+    prerequisites = {
+        tech_idrinthstellarisbettershiphulls_battleship_improvements
+    }
+
+    component_slot = {
+        name = "LARGE_GUN_01"
+        slot_size = large
+        slot_type = weapon
+        locatorname = "large_gun_01"
+    }
+
+    component_slot = {
+        name = "LARGE_GUN_02"
+        slot_size = large
+        slot_type = weapon
+        locatorname = "large_gun_02"
+    }
+
+    component_slot = {
+        name = "MEDIUM_GUN_01"
+        slot_size = medium
+        slot_type = weapon
+        locatorname = "medium_gun_01"
+    }
+
+    large_utility_slots = 2
+    aux_utility_slots = 2
+    required_component_sets = "cofh_se_ship_small_aura_components"
+    required_component_sets = "cofh_se_ship_small_aura_components"
+
+    cost = 245
+}
+
+ship_section_template = {
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T1_BATTLESHIP_STERN_M2"
+    ship_size = battleship
+    fits_on_slot = stern
+    entity = "battleship_stern_M2_entity"
+    icon = "GFX_ship_part_core_stern"
+    prerequisites = {
+        tech_idrinthstellarisbettershiphulls_battleship_improvements
+    }
+
+    component_slot = {
+        name = "MEDIUM_GUN_01"
+        slot_size = medium
+        slot_type = weapon
+        locatorname = "medium_gun_01"
+    }
+    component_slot = {
+        name = "MEDIUM_GUN_02"
+        slot_size = medium
+        slot_type = weapon
+        locatorname = "medium_gun_02"
+    }
+    component_slot = {
+        name = "MEDIUM_GUN_03"
+        slot_size = medium
+        slot_type = weapon
+        locatorname = "medium_gun_03"
+    }
+    component_slot = {
+        name = "MEDIUM_GUN_04"
+        slot_size = medium
+        slot_type = weapon
+        locatorname = "medium_gun_04"
+    }
+    component_slot = {
+        name = "MEDIUM_GUN_05"
+        slot_size = medium
+        slot_type = weapon
+        locatorname = "medium_gun_05"
+    }
+
+    large_utility_slots = 2
+    aux_utility_slots = 2
+
+    cost = 245
+}
+#
+# TIER 2
+#
+ship_section_template = { #improved artillery
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T2_BATTLESHIP_STERN_L1"
+    ship_size = battleship
+    fits_on_slot = stern
+    entity = "battleship_stern_L1_entity"
+    icon = "GFX_ship_part_core_stern"
+    prerequisites = {
+        tech_idrinthstellarisbettershiphulls_battleship_improvements_1
+    }
+
+    component_slot = {
+        name = "LARGE_GUN_01"
+        slot_size = large
+        slot_type = weapon
+        locatorname = "large_gun_01"
+    }
+
+    component_slot = {
+        name = "LARGE_GUN_02"
+        slot_size = large
+        slot_type = weapon
+        locatorname = "large_gun_02"
+    }
+
+    component_slot = {
+        name = "LARGE_GUN_03"
+        slot_size = large
+        slot_type = weapon
+        locatorname = "large_gun_03"
+    }
+
+    large_utility_slots = 3
+    aux_utility_slots = 3
+    required_component_sets = "cofh_se_ship_small_aura_components"
+    required_component_sets = "cofh_se_ship_small_aura_components"
+
+    cost = 250
+}
+
+ship_section_template = { #improved broadside
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T2_BATTLESHIP_STERN_M2"
+    ship_size = battleship
+    fits_on_slot = stern
+    entity = "battleship_stern_M2_entity"
+    icon = "GFX_ship_part_core_stern"
+    prerequisites = {
+        tech_idrinthstellarisbettershiphulls_battleship_improvements
+    }
+
+    component_slot = {
+        name = "MEDIUM_GUN_01"
+        slot_size = medium
+        slot_type = weapon
+        locatorname = "medium_gun_01"
+    }
+    component_slot = {
+        name = "MEDIUM_GUN_02"
+        slot_size = medium
+        slot_type = weapon
+        locatorname = "medium_gun_02"
+    }
+    component_slot = {
+        name = "MEDIUM_GUN_03"
+        slot_size = medium
+        slot_type = weapon
+        locatorname = "medium_gun_03"
+    }
+    component_slot = {
+        name = "MEDIUM_GUN_04"
+        slot_size = medium
+        slot_type = weapon
+        locatorname = "medium_gun_04"
+    }
+    component_slot = {
+        name = "MEDIUM_GUN_05"
+        slot_size = medium
+        slot_type = weapon
+        locatorname = "medium_gun_05"
+    }
+    component_slot = {
+        name = "MEDIUM_GUN_06"
+        slot_size = medium
+        slot_type = weapon
+        locatorname = "medium_gun_06"
+    }
+
+    medium_utility_slots = 1
+    large_utility_slots = 3
+    aux_utility_slots = 3
+
+    cost = 250
+}

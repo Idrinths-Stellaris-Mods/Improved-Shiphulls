@@ -1,0 +1,280 @@
+#
+# TIER 1
+#
+ship_section_template = {
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T1_DESTROYER_BOW_M1S2" #Improved Gunship
+    ship_size = destroyer
+    fits_on_slot = bow
+    entity = "destroyer_bow_M1S2_entity"
+    icon = "GFX_ship_part_core_bow"
+    prerequisites = {
+        tech_idrinthstellarisbettershiphulls_destroyer_improvements
+    }
+
+    ai_weight = {
+        modifier = {
+            factor = 10.0
+            OR = {
+                has_ai_personality = peaceful_traders
+                has_ai_personality = slaving_despots
+                has_ai_personality = migrating_flock
+                has_ai_personality = evangelising_zealots
+                has_ai_personality = hive_mind
+            }
+        }
+    }
+
+    component_slot = {
+        name = "MEDIUM_GUN_01"
+        slot_size = medium
+        slot_type = weapon
+        locatorname = "medium_gun_01"
+    }
+
+    component_slot = {
+        name = "SMALL_GUN_01"
+        slot_size = small
+        slot_type = weapon
+        locatorname = "small_gun_01"
+    }
+
+    component_slot = {
+        name = "SMALL_GUN_02"
+        slot_size = small
+        slot_type = weapon
+        locatorname = "small_gun_02"
+    }
+
+    medium_utility_slots = 1
+    large_utility_slots = 1
+    aux_utility_slots = 1
+
+    cost = 65
+}
+
+ship_section_template = {
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T1_DESTROYER_BOW_S3" # improved Picket ship
+    ship_size = destroyer
+    fits_on_slot = bow
+    entity = "destroyer_bow_S3_entity"
+    icon = "GFX_ship_part_core_bow"
+
+    prerequisites = {
+        tech_pd_tracking_1
+        tech_pd_tracking_2
+        tech_pd_tracking_3
+        tech_idrinthstellarisbettershiphulls_destroyer_improvements
+    }
+
+    ai_weight = {
+        modifier = {
+            factor = 10.0
+            NOR = {
+                has_ai_personality = peaceful_traders
+                has_ai_personality = slaving_despots
+                has_ai_personality = migrating_flock
+                has_ai_personality = evangelising_zealots
+                has_ai_personality = hive_mind
+            }
+        }
+    }
+
+    component_slot = {
+        name = "SMALL_GUN_01"
+        slot_size = point_defence
+        slot_type = weapon
+        locatorname = "small_gun_01"
+    }
+
+    component_slot = {
+        name = "SMALL_GUN_02"
+        slot_size = small
+        slot_type = weapon
+        locatorname = "small_gun_02"
+    }
+
+    component_slot = {
+        name = "SMALL_GUN_03"
+        slot_size = small
+        slot_type = weapon
+        locatorname = "small_gun_03"
+    }
+
+
+    medium_utility_slots = 2
+    large_utility_slots = 1
+    aux_utility_slots = 1
+
+    cost = 65
+}
+
+ship_section_template = { #improved artillery
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T1_DESTROYER_BOW_L1"
+    ship_size = destroyer
+    fits_on_slot = bow
+    entity = "destroyer_bow_L1_entity"
+    icon = "GFX_ship_part_core_bow"
+    prerequisites = {
+        tech_idrinthstellarisbettershiphulls_destroyer_improvements
+    }
+
+    ai_weight = {
+        modifier = {
+            factor = 0.8
+        }
+    }
+
+    component_slot = {
+        name = "LARGE_GUN_01"
+        slot_size = large
+        slot_type = weapon
+        locatorname = "large_gun_01"
+    }
+
+    medium_utility_slots = 1
+    large_utility_slots = 1
+    aux_utility_slots = 1
+
+    cost = 65
+}
+#
+# TIER 2
+#
+ship_section_template = {
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T2_DESTROYER_BOW_M1S2" #Improved Gunship
+    ship_size = destroyer
+    fits_on_slot = bow
+    entity = "destroyer_bow_M1S2_entity"
+    icon = "GFX_ship_part_core_bow"
+    prerequisites = {
+        tech_idrinthstellarisbettershiphulls_destroyer_improvements_1
+    }
+
+    ai_weight = {
+        modifier = {
+            factor = 10.0
+            OR = {
+                has_ai_personality = peaceful_traders
+                has_ai_personality = slaving_despots
+                has_ai_personality = migrating_flock
+                has_ai_personality = evangelising_zealots
+                has_ai_personality = hive_mind
+            }
+        }
+    }
+
+    component_slot = {
+        name = "MEDIUM_GUN_01"
+        slot_size = medium
+        slot_type = weapon
+        locatorname = "medium_gun_01"
+    }
+
+    component_slot = {
+        name = "SMALL_GUN_01"
+        slot_size = small
+        slot_type = weapon
+        locatorname = "small_gun_01"
+    }
+
+    component_slot = {
+        name = "SMALL_GUN_02"
+        slot_size = small
+        slot_type = weapon
+        locatorname = "small_gun_02"
+    }
+
+    small_utility_slots = 1
+    medium_utility_slots = 2
+    large_utility_slots = 1
+    aux_utility_slots = 1
+
+    cost = 70
+}
+
+ship_section_template = {
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T2_DESTROYER_BOW_S3" # improved Picket ship
+    ship_size = destroyer
+    fits_on_slot = bow
+    entity = "destroyer_bow_S3_entity"
+    icon = "GFX_ship_part_core_bow"
+
+    prerequisites = {
+        tech_pd_tracking_1
+        tech_pd_tracking_2
+        tech_pd_tracking_3
+        tech_idrinthstellarisbettershiphulls_destroyer_improvements_1
+    }
+
+    ai_weight = {
+        modifier = {
+            factor = 10.0
+            NOR = {
+                has_ai_personality = peaceful_traders
+                has_ai_personality = slaving_despots
+                has_ai_personality = migrating_flock
+                has_ai_personality = evangelising_zealots
+                has_ai_personality = hive_mind
+            }
+        }
+    }
+
+    component_slot = {
+        name = "SMALL_GUN_01"
+        slot_size = point_defence
+        slot_type = weapon
+        locatorname = "small_gun_01"
+    }
+
+    component_slot = {
+        name = "SMALL_GUN_02"
+        slot_size = small
+        slot_type = weapon
+        locatorname = "small_gun_02"
+    }
+
+    component_slot = {
+        name = "SMALL_GUN_03"
+        slot_size = small
+        slot_type = weapon
+        locatorname = "small_gun_03"
+    }
+
+    small_utility_slots = 1
+    medium_utility_slots = 1
+    large_utility_slots = 2
+    aux_utility_slots = 1
+
+    cost = 70
+}
+
+ship_section_template = {
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T2_DESTROYER_BOW_L1"
+    ship_size = destroyer
+    fits_on_slot = bow
+    entity = "destroyer_bow_L1_entity"
+    icon = "GFX_ship_part_core_bow"
+    prerequisites = {
+        tech_idrinthstellarisbettershiphulls_destroyer_improvements_1
+    }
+
+    ai_weight = {
+        modifier = {
+            factor = 0.8
+        }
+    }
+
+    component_slot = {
+        name = "LARGE_GUN_01"
+        slot_size = large
+        slot_type = weapon
+        locatorname = "large_gun_01"
+    }
+
+    small_utility_slots = 1
+    medium_utility_slots = 2
+    large_utility_slots = 1
+    aux_utility_slots = 1
+
+    cost = 70
+}

@@ -1,0 +1,388 @@
+@shipAuraRange = 50
+#
+# AUX
+#
+utility_component_template = {
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_REGENERATIVE_CRYSTAL_ARMOR"
+    size = aux
+    icon = "GFX_ship_part_crystal_armor_2"
+    icon_frame = 1
+    power = 0
+    cost = 250
+    
+    prerequisites = {
+        tech_crystal_armor_2
+        tech_regenerative_hull_tissue
+    }
+    component_set = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_REGENERATIVE_CRYSTAL_ARMOR"
+    modifier = {
+        ship_hitpoints_mult = 0.1
+        ship_hitpoints_add = 100
+        ship_armor_add = 5
+        ship_auto_repair_add = 0.02
+    }
+    ai_weight = {
+        weight = 50
+    }
+}
+utility_component_template = {
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_BATTLESHIP_AURA_NANOBOT_CLOUD"
+    size = aux
+    icon = "GFX_ship_part_aura_nanobot"
+    icon_frame = 1
+    power = -30
+    cost = 60
+    class_restriction = { shipclass_battleship }
+    component_set = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_BATTLESHIP_AURA_NANOBOT_CLOUD"
+
+    friendly_aura = {
+        name = "aura_battleship_nanobot_cloud"
+        radius = @shipAuraRange
+        apply_on = ships
+
+        stack_info = {
+            id = friendly_battleship_hull_support_aura
+            priority = 20
+        }
+
+        modifier = {
+            ship_auto_repair_add = 0.025
+        }
+
+        graphics = {
+            area_effect = {
+                entity = "circle_area_entity"
+                dynamic_scale = yes
+            }
+            ship_effect = {
+                entity = "ship_aura_positive_entity"
+                dynamic_scale = no
+            }
+        }
+    }
+    modfier {
+        ship_auto_repair_add = 0.04
+    }
+    ai_weight = {
+        weight = 4
+    }
+}
+
+utility_component_template = {
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_BATTLESHIP_AURA_SHIELD_RECHARGER"
+    size = aux
+    icon = "GFX_ship_part_aura_shield_recharger"
+    icon_frame = 1
+    power = -30
+    cost = 60
+    class_restriction = { shipclass_battleship }
+    component_set = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_BATTLESHIP_AURA_SHIELD_RECHARGER"
+
+    friendly_aura = {
+        name = "aura_shield_recharger"
+        radius = @shipAuraRange
+        apply_on = ships
+
+        stack_info = {
+            id = friendly_battleship_shield_support_aura
+            priority = 1
+        }
+
+        modifier = {
+            ship_shield_regen_add_perc = 0.01
+        }
+
+        graphics = {
+            area_effect = {
+                entity = "circle_area_entity"
+                dynamic_scale = yes
+            }
+            ship_effect = {
+                entity = "ship_aura_positive_entity"
+                dynamic_scale = no
+            }
+        }
+    }
+    modfier {
+        ship_shield_regen_add_perc = 0.16
+    }
+    ai_weight = {
+        weight = 4
+    }
+}
+
+utility_component_template = {
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_BATTLESHIP_AURA_MINEFIELD"
+    size = aux
+    icon = "GFX_ship_part_aura_minefield"
+    icon_frame = 1
+    power = -30
+    cost = 60
+
+    component_set = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_BATTLESHIP_AURA_MINEFIELD"
+    class_restriction = { shipclass_battleship }
+
+    hostile_aura = {
+        name = "aura_minefield"
+        radius = @shipAuraRange
+        apply_on = ships
+
+        stack_info = {
+            id = hostile_battleship_minefield_aura
+            priority = 1
+        }
+
+        damage_per_day = {
+            accuracy = 0.2
+            damage = { min = 5 max = 75 }
+            shield_damage = 1.5
+            shield_penetration = 0.75
+            armor_penetration = 0.75
+        }
+
+        graphics = {
+            area_effect = {
+                entity = "circle_area_entity"
+                dynamic_scale = yes
+            }
+
+            area_effect = {
+                entity = "mine_field_small_entity"
+                dynamic_scale = no
+            }
+             ship_effect = {
+                 entity = "ship_aura_minefield_entity"
+                 dynamic_scale = no
+            }
+        }
+    }
+
+    ai_weight = {
+        weight = 1
+        modifier = {
+            weight = 101
+            has_country_flag = aggressive
+        }
+    }
+}
+utility_component_template = {
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_BATTLESHIP_AURA_SUBSPACE_SNARE"
+    size = aux
+    icon = "GFX_ship_part_aura_snare"
+    icon_frame = 1
+    power = -30
+    cost = 60
+    class_restriction = { shipclass_battleship }
+
+    component_set = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_BATTLESHIP_AURA_SUBSPACE_SNARE"
+
+    hostile_aura = {
+        name = "aura_ship_subspace_snare"
+        radius = @shipAuraRange
+        apply_on = fleets
+
+        stack_info = {
+            id = hostile_battleship_snare_aura
+            priority = 1
+        }
+
+        modifier = {
+            ship_windup_mult = 4
+            ship_speed_mult = -0.5
+            ship_evasion_mult = -0.125
+            fleet_emergency_ftl_min_days_mult = 1
+        }
+
+        graphics = {
+            area_effect = {
+                entity = "circle_area_entity"
+                dynamic_scale = yes
+            }
+            ship_effect = {
+                entity = "ship_aura_negative_entity"
+                dynamic_scale = no
+            }
+        }
+    }
+
+    ai_weight = {
+        weight = 0
+    }
+}
+utility_component_template = {
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_MANUVERING_THRUSTERS_1_AUX"
+    size = aux
+    icon = "GFX_ship_part_afterburner_1"
+    icon_frame = 1
+    power = -10
+    cost = 20
+    modifier = {
+        ship_combat_speed_add = 0.05
+        ship_evasion_add = 1
+        ship_rotation_speed_add = 0.005
+        ship_acceleration_add = 0.05
+    }
+    prerequisites = { "tech_afterburners_1" }
+    component_set = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_MANUVERING_THRUSTERS_1"
+    upgrades_to = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_MANUVERING_THRUSTERS_2_AUX"
+
+    ai_weight = {
+        weight = 10
+    }
+}
+
+utility_component_template = {
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_MANUVERING_THRUSTERS_2_AUX"
+    size = aux
+    icon = "GFX_ship_part_afterburner_2"
+    icon_frame = 1
+    power = -20
+    cost = 40
+    modifier = {
+        ship_combat_speed_add = 0.125
+        ship_evasion_add = 2.5
+        ship_rotation_speed_add = 0.0125
+        ship_acceleration_add = 0.125
+    }
+    prerequisites = { "tech_afterburners_2" }
+    component_set = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_MANUVERING_THRUSTERS_2"
+
+    ai_weight = {
+        weight = 10
+    }
+}
+#
+# SMALL
+#
+utility_component_template = {
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_MANUVERING_THRUSTERS_1_SMALL"
+    size = small
+    icon = "GFX_ship_part_afterburner_1"
+    icon_frame = 1
+    power = -5
+    cost = 10
+    modifier = {
+        ship_combat_speed_add = 0.025
+        ship_evasion_add = 0.5
+        ship_rotation_speed_add = 0.0025
+        ship_acceleration_add = 0.025
+    }
+    prerequisites = { "tech_afterburners_1" }
+    component_set = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_MANUVERING_THRUSTERS_1"
+    upgrades_to = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_MANUVERING_THRUSTERS_2_SMALL"
+
+    ai_weight = {
+        weight = 10
+    }
+}
+
+utility_component_template = {
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_MANUVERING_THRUSTERS_2_SMALL"
+    size = small
+    icon = "GFX_ship_part_afterburner_2"
+    icon_frame = 1
+    power = -10
+    cost = 20
+    modifier = {
+        ship_combat_speed_add = 0.0675
+        ship_evasion_add = 1.25
+        ship_rotation_speed_add = 0.00675
+        ship_acceleration_add = 0.0675
+    }
+    prerequisites = { "tech_afterburners_2" }
+    component_set = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_MANUVERING_THRUSTERS_2"
+
+    ai_weight = {
+        weight = 10
+    }
+}
+#
+# MEDIUM
+#
+utility_component_template = {
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_MANUVERING_THRUSTERS_1_MEDIUM"
+    size = medium
+    icon = "GFX_ship_part_afterburner_1"
+    icon_frame = 1
+    power = -10
+    cost = 20
+    modifier = {
+        ship_combat_speed_add = 0.05
+        ship_evasion_add = 1
+        ship_rotation_speed_add = 0.005
+        ship_acceleration_add = 0.05
+    }
+    prerequisites = { "tech_afterburners_1" }
+    component_set = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_MANUVERING_THRUSTERS_1"
+    upgrades_to = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_MANUVERING_THRUSTERS_2_MEDIUM"
+
+    ai_weight = {
+        weight = 10
+    }
+}
+
+utility_component_template = {
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_MANUVERING_THRUSTERS_2_MEDIUM"
+    size = medium
+    icon = "GFX_ship_part_afterburner_2"
+    icon_frame = 1
+    power = -20
+    cost = 40
+    modifier = {
+        ship_combat_speed_add = 0.125
+        ship_evasion_add = 2.5
+        ship_rotation_speed_add = 0.0125
+        ship_acceleration_add = 0.125
+    }
+    prerequisites = { "tech_afterburners_2" }
+    component_set = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_MANUVERING_THRUSTERS_2"
+
+    ai_weight = {
+        weight = 10
+    }
+}
+#
+# LARGE
+#
+utility_component_template = {
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_MANUVERING_THRUSTERS_1_LARGE"
+    size = small
+    icon = "GFX_ship_part_afterburner_1"
+    icon_frame = 1
+    power = -20
+    cost = 40
+    modifier = {
+        ship_combat_speed_add = 0.1
+        ship_evasion_add = 2
+        ship_rotation_speed_add = 0.01
+        ship_acceleration_add = 0.1
+    }
+    prerequisites = { "tech_afterburners_1" }
+    component_set = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_MANUVERING_THRUSTERS_1"
+    upgrades_to = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_MANUVERING_THRUSTERS_2_LARGE"
+
+    ai_weight = {
+        weight = 10
+    }
+}
+
+utility_component_template = {
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_MANUVERING_THRUSTERS_2_LARGE"
+    size = small
+    icon = "GFX_ship_part_afterburner_2"
+    icon_frame = 1
+    power = -40
+    cost = 80
+    modifier = {
+        ship_combat_speed_add = 0.25
+        ship_evasion_add = 5
+        ship_rotation_speed_add = 0.025
+        ship_acceleration_add = 0.25
+    }
+    prerequisites = { "tech_afterburners_2" }
+    component_set = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_MANUVERING_THRUSTERS_2"
+
+    ai_weight = {
+        weight = 10
+    }
+}
