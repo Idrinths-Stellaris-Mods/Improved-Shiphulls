@@ -1,0 +1,38 @@
+component_set = {
+    icon = "GFX_ship_part_crystal_armor_2"
+    icon_frame = 1
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_REGENERATIVE_CRYSTAL_ARMOR"
+}
+component_set = {
+    icon = "GFX_ship_part_aura_nanobot"
+    icon_frame = 1
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_BATTLESHIP_AURA_NANOBOT_CLOUD"
+}
+
+component_set = {
+    icon = "GFX_ship_part_aura_shield_recharger"
+    icon_frame = 1
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_BATTLESHIP_AURA_SHIELD_RECHARGER"
+}
+
+component_set = {
+    icon = "GFX_ship_part_aura_minefield"
+    icon_frame = 1
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_BATTLESHIP_AURA_MINEFIELD"
+}
+component_set = {
+    icon = "GFX_ship_part_aura_snare"
+    icon_frame = 1
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_BATTLESHIP_AURA_SUBSPACE_SNARE"
+}
+component_set = {
+    icon = "GFX_ship_part_afterburner_1"
+    icon_frame = 1
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_MANUVERING_THRUSTERS_1"
+}
+
+component_set = {
+    icon = "GFX_ship_part_afterburner_2"
+    icon_frame = 1
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_MANUVERING_THRUSTERS_2"
+}
