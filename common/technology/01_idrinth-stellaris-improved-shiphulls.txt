@@ -81,7 +81,7 @@ tech_idrinthstellarisbettershiphulls_civilian_ships_improvements= {
     tier = 0
     prerequisites = { "tech_spaceport_2" "tech_engineering_lab_1" }
 }
-tech_idrinthstellarisbettershiphulls_civilian_ships_improvements= {
+tech_idrinthstellarisbettershiphulls_civilian_ships_improvements_1= {
     cost=500
     area = engineering
     category = { voidcraft }
