@@ -2,7 +2,7 @@
 # TIER 1
 #
 ship_section_template = { #improved broadside
-    key = "CRUISER_STERN_M1"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T1_CRUISER_STERN_M1"
     ship_size = cruiser
     fits_on_slot = stern
     entity = "cruiser_stern_M1_entity"
@@ -31,7 +31,7 @@ ship_section_template = { #improved broadside
 }
 
 ship_section_template = { #improved gunship
-    key = "CRUISER_STERN_S2"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T1_CRUISER_STERN_S2"
     ship_size = cruiser
     fits_on_slot = stern
     entity = "cruiser_stern_S2_entity"
@@ -77,7 +77,7 @@ ship_section_template = { #improved gunship
 # TIER 2
 #
 ship_section_template = { #improved broadside
-    key = "CRUISER_STERN_M1"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T2_CRUISER_STERN_M1"
     ship_size = cruiser
     fits_on_slot = stern
     entity = "cruiser_stern_M1_entity"
@@ -106,7 +106,7 @@ ship_section_template = { #improved broadside
 }
 
 ship_section_template = { #improved gunship
-    key = "CRUISER_STERN_S2"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T2_CRUISER_STERN_S2"
     ship_size = cruiser
     fits_on_slot = stern
     entity = "cruiser_stern_S2_entity"

@@ -2,7 +2,7 @@
 # TIER 1
 #
 ship_section_template = {
-    key = "DESTROYER_STERN_PD2"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T1_DESTROYER_STERN_PD2"
     ship_size = destroyer
     fits_on_slot = stern
     entity = "destroyer_stern_S2_entity"
@@ -40,7 +40,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-    key = "DESTROYER_STERN_S2"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T1_DESTROYER_STERN_S2"
     ship_size = destroyer
     fits_on_slot = stern
     entity = "destroyer_stern_S2_entity"
@@ -74,7 +74,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-    key = "DESTROYER_STERN_M1"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T1_DESTROYER_STERN_M1"
     ship_size = destroyer
     fits_on_slot = stern
     entity = "destroyer_stern_M1_entity"
@@ -99,7 +99,7 @@ ship_section_template = {
 # TIER 2
 #
 ship_section_template = { # improved picket ship
-    key = "DESTROYER_STERN_PD2"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T2_DESTROYER_STERN_PD2"
     ship_size = destroyer
     fits_on_slot = stern
     entity = "destroyer_stern_S2_entity"
@@ -137,7 +137,7 @@ ship_section_template = { # improved picket ship
 }
 
 ship_section_template = {
-    key = "DESTROYER_STERN_S2"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T2_DESTROYER_STERN_S2"
     ship_size = destroyer
     fits_on_slot = stern
     entity = "destroyer_stern_S2_entity"
@@ -171,7 +171,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-    key = "DESTROYER_STERN_M1"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T2_DESTROYER_STERN_M1"
     ship_size = destroyer
     fits_on_slot = stern
     entity = "destroyer_stern_M1_entity"

@@ -1,5 +1,5 @@
 ship_section_template = {
-    key = "CORVETTE_MID_M1S1"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T1_CORVETTE_MID_M1S1"
     ship_size = corvette
     fits_on_slot = mid
     entity = "corvette_M1S1_entity"
@@ -36,7 +36,7 @@ ship_section_template = {
         locatorname = "medium_gun_01"
     }
 
-    small_utility_slots = 2
+    small_utility_slots = 3
     medium_utility_slots = 3
     aux_utility_slots = 1
 
@@ -44,7 +44,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-    key = "CORVETTE_MID_S3"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T1_CORVETTE_MID_S3"
     ship_size = corvette
     fits_on_slot = mid
     entity = "corvette_S3_entity"
@@ -79,7 +79,7 @@ ship_section_template = {
         locatorname = "small_gun_03"
     }
 
-    small_utility_slots = 2
+    small_utility_slots = 3
     medium_utility_slots = 3
     aux_utility_slots = 1
 

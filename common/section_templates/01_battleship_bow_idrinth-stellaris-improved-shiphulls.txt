@@ -2,7 +2,7 @@
 # TIER 1
 #
 ship_section_template = {
-    key = "BATTLESHIP_BOW_L1M1S2"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T1_BATTLESHIP_BOW_L1M1S2"
     ship_size = battleship
     fits_on_slot = bow
     entity = "battleship_bow_L1M1S2_entity"
@@ -47,7 +47,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-    key = "BATTLESHIP_BOW_L2"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T1_BATTLESHIP_BOW_L2"
     ship_size = battleship
     fits_on_slot = bow
     entity = "battleship_bow_L2_entity"
@@ -78,7 +78,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-    key = "BATTLESHIP_BOW_M1S2SHB"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T1_BATTLESHIP_BOW_M1S2SHB"
     ship_size = battleship
     fits_on_slot = bow
     entity = "battleship_bow_M1S2SHB_entity"
@@ -134,7 +134,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-    key = "BATTLESHIP_BOW_M2S4"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T1_BATTLESHIP_BOW_M2S4"
     ship_size = battleship
     fits_on_slot = bow
     entity = "battleship_bow_XL1_entity"
@@ -178,7 +178,7 @@ ship_section_template = {
 # TIER 2
 #
 ship_section_template = {
-    key = "BATTLESHIP_BOW_L1M1S2"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T2_BATTLESHIP_BOW_L1M1S2"
     ship_size = battleship
     fits_on_slot = bow
     entity = "battleship_bow_L1M1S2_entity"
@@ -224,7 +224,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-    key = "BATTLESHIP_BOW_L2"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T2_BATTLESHIP_BOW_L2"
     ship_size = battleship
     fits_on_slot = bow
     entity = "battleship_bow_L2_entity"
@@ -256,7 +256,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-    key = "BATTLESHIP_BOW_M1S2SHB"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T2_BATTLESHIP_BOW_M1S2SHB"
     ship_size = battleship
     fits_on_slot = bow
     entity = "battleship_bow_M1S2SHB_entity"
@@ -313,7 +313,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-    key = "BATTLESHIP_BOW_M2S4"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T2_BATTLESHIP_BOW_M2S4"
     ship_size = battleship
     fits_on_slot = bow
     entity = "battleship_bow_XL1_entity"

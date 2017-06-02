@@ -2,7 +2,7 @@
 # TIER 1
 #
 ship_section_template = {
-    key = "BATTLESHIP_STERN_L1"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T1_BATTLESHIP_STERN_L1"
     ship_size = battleship
     fits_on_slot = stern
     entity = "battleship_stern_L1_entity"
@@ -41,7 +41,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-    key = "BATTLESHIP_STERN_M2"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T1_BATTLESHIP_STERN_M2"
     ship_size = battleship
     fits_on_slot = stern
     entity = "battleship_stern_M2_entity"
@@ -90,7 +90,7 @@ ship_section_template = {
 # TIER 2
 #
 ship_section_template = { #improved artillery
-    key = "BATTLESHIP_STERN_L1"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T2_BATTLESHIP_STERN_L1"
     ship_size = battleship
     fits_on_slot = stern
     entity = "battleship_stern_L1_entity"
@@ -114,10 +114,10 @@ ship_section_template = { #improved artillery
     }
 
     component_slot = {
-        name = "MEDIUM_GUN_01"
-        slot_size = medium
+        name = "LARGE_GUN_03"
+        slot_size = large
         slot_type = weapon
-        locatorname = "medium_gun_01"
+        locatorname = "large_gun_03"
     }
 
     large_utility_slots = 3
@@ -129,7 +129,7 @@ ship_section_template = { #improved artillery
 }
 
 ship_section_template = { #improved broadside
-    key = "BATTLESHIP_STERN_M2"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T2_BATTLESHIP_STERN_M2"
     ship_size = battleship
     fits_on_slot = stern
     entity = "battleship_stern_M2_entity"
@@ -168,7 +168,14 @@ ship_section_template = { #improved broadside
         slot_type = weapon
         locatorname = "medium_gun_05"
     }
+    component_slot = {
+        name = "MEDIUM_GUN_06"
+        slot_size = medium
+        slot_type = weapon
+        locatorname = "medium_gun_06"
+    }
 
+    medium_utility_slots = 1
     large_utility_slots = 3
     aux_utility_slots = 3
 

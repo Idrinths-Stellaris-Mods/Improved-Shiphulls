@@ -2,7 +2,7 @@
 # Tier 1
 #
 ship_section_template = {
-    key = "DEFAULT_TRANSPORT_SECTION"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T1_DEFAULT_TRANSPORT_SECTION"
     ship_size = transport
     fits_on_slot = mid
     entity = "transport_ship_entity"
@@ -21,7 +21,7 @@ ship_section_template = {
     aux_utility_slots = 2
 }
 ship_section_template = {
-    key = "DEFAULT_SCIENCESHIP_SECTION"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T1_DEFAULT_SCIENCESHIP_SECTION"
     ship_size = science
     fits_on_slot = mid
     entity = "science_ship_entity"
@@ -42,7 +42,7 @@ ship_section_template = {
     aux_utility_slots = 2
 }
 ship_section_template = {
-    key = "DEFAULT_CONSTRUCTION_SECTION"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T1_DEFAULT_CONSTRUCTION_SECTION"
     ship_size = constructor
     fits_on_slot = mid
     entity = "construction_ship_entity"
@@ -66,7 +66,7 @@ ship_section_template = {
 # Tier 2
 #
 ship_section_template = {
-    key = "DEFAULT_TRANSPORT_SECTION"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T2_DEFAULT_TRANSPORT_SECTION"
     ship_size = transport
     fits_on_slot = mid
     entity = "transport_ship_entity"
@@ -91,7 +91,7 @@ ship_section_template = {
     aux_utility_slots = 2
 }
 ship_section_template = {
-    key = "DEFAULT_SCIENCESHIP_SECTION"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T2_DEFAULT_SCIENCESHIP_SECTION"
     ship_size = science
     fits_on_slot = mid
     entity = "science_ship_entity"
@@ -118,7 +118,7 @@ ship_section_template = {
     aux_utility_slots = 2
 }
 ship_section_template = {
-    key = "DEFAULT_CONSTRUCTION_SECTION"
+    key = "IDRINTHSTELLARISIMPROVEDSHIPHULLS_T2_DEFAULT_CONSTRUCTION_SECTION"
     ship_size = constructor
     fits_on_slot = mid
     entity = "construction_ship_entity"
