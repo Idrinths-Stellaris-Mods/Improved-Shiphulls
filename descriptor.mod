@@ -2,9 +2,11 @@
 path="mod/idrinth-stellaris-improved-shiphulls"
 tags={
 	"Military"
-	"Ships"
+	"Spaceships"
 	"Technologies"
 	"Balance"
+        "Deutsch"
+        "English"
 }
 picture="idrinth.jpg"
 supported_version="1.6.*"

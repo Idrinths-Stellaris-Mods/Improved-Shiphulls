@@ -60,9 +60,6 @@ ship_section_template = {
     icon = "GFX_ship_part_core_bow"
 
     prerequisites = {
-        tech_pd_tracking_1
-        tech_pd_tracking_2
-        tech_pd_tracking_3
         tech_idrinthstellarisbettershiphulls_destroyer_improvements
     }
 
@@ -200,9 +197,6 @@ ship_section_template = {
     icon = "GFX_ship_part_core_bow"
 
     prerequisites = {
-        tech_pd_tracking_1
-        tech_pd_tracking_2
-        tech_pd_tracking_3
         tech_idrinthstellarisbettershiphulls_destroyer_improvements_1
     }
 

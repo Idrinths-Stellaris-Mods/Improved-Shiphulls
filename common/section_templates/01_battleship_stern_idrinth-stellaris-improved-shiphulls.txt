@@ -34,8 +34,6 @@ ship_section_template = {
 
     large_utility_slots = 2
     aux_utility_slots = 2
-    required_component_sets = "cofh_se_ship_small_aura_components"
-    required_component_sets = "cofh_se_ship_small_aura_components"
 
     cost = 245
 }
@@ -122,8 +120,6 @@ ship_section_template = { #improved artillery
 
     large_utility_slots = 3
     aux_utility_slots = 3
-    required_component_sets = "cofh_se_ship_small_aura_components"
-    required_component_sets = "cofh_se_ship_small_aura_components"
 
     cost = 250
 }
